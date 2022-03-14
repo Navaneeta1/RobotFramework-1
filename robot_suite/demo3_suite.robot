@@ -16,5 +16,7 @@ TC2
 
 TC3
    Copy File    E:${/}ROBOT_SESSION${/}ROBOT_PROJECTS${/}Temp${/}Notes.txt    E:${/}ROBOT_SESSION${/}ROBOT_PROJECTS${/}Temp${/}Notes1.txt
-
+   Sleep    5s
+   #Remove File    E:${/}ROBOT_SESSION${/}ROBOT_PROJECTS${/}Temp
+   #Remove Directory    E:${/}ROBOT_SESSION${/}ROBOT_PROJECTS${/}Temp${/}Notes.txt
 
