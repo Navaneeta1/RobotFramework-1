@@ -12,9 +12,11 @@ TC1
      Switch Window       MediBuddy LaunchPad
      Input Text    id=getInTouchName    Nav
      Input Text    id=getInTouchEmail    nav@gmail.com
-     Input Text    id=getInTouchMobile    9988776655
+     Input Text    id=getInTouchMobile    9988
      Input Text    id=getInTouchEmpCount    1
      Input Text    id=getInTouchDesignation    Student
-     Click Element    xpath=//button[@type='submit']
+     Click Element    xpath=//button[@text()='Get in Touch']
+     Element Text Should Be    //div[contains(text(),'digits')]   Mobile Number should be 10 digits
+     [Teardown]    Close Browser
 
 
