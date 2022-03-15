@@ -11,8 +11,9 @@ TC1
      Input Text    xpath=//input[@data-sc-field-name='firstName']    Navaneeta
      Input Text    xpath=//input[@data-sc-field-name='lastName']    Y
      Input Text    xpath=//input[@data-sc-field-name='email']    nav@gmail.
-     Get Selected List Label    xpath=//select[@data-sc-field-name='employees']       10 - 99
+     Select From List By Label    xpath=//select[@data-sc-field-name='employees']       10 - 99
      Click Element    xpath=//input[@type='submit']
      [Teardown]     Close Browser
+
 
 
