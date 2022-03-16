@@ -1,7 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library     OperatingSystem
-Test Teardown      Close Browser
+#Test Teardown      Close Browser
 *** Test Cases ***
 TC1
      Open Browser             browser=chrome      executable_path=${EXECDIR}${/}driver${/}chromedriver.exe
@@ -21,4 +21,7 @@ TC2
 
      Click Element    link=Calculate Membership Fee
      ${alert_text}  Handle Alert       action=ACCEPT       timeout=20s
+     Log To Console    ${alert_text}
+     Should Be Equal    ${alert_text}       Please enter amount in digit and greater than zero.
+
 
