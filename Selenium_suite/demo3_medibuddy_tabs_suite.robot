@@ -1,6 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library     OperatingSystem
+Library     AutoRecorder
 *** Test Cases ***
 TC1
      Open Browser             browser=chrome      executable_path=${EXECDIR}${/}driver${/}chromedriver.exe
